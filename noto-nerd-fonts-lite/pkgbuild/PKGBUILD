@@ -5,13 +5,13 @@ pkgdesc="Google Noto TTF fonts (nerd lite version)"
 # depends=('')
 # makedepends=('')
 conflicts=('noto-fonts-sans-nerd')
-pkgver=$(date +%y.%m.%d)
-pkgrel=$(date +%H%M)
+pkgver=24.05.15
+pkgrel=0407
 arch=('any')
 license=('Apache-2.0')
 url="https://github.com/biglinux/$pkgname"
 provides=("$pkgname")
-source=("git+${url}.git")
+source=("git+${url}.git#branch=stable-2024-05-15")
 md5sums=('SKIP')
 if [ -e "${pkgname}.install" ];then
     install=${pkgname}.install
